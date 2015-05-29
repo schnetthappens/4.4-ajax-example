@@ -1,3 +1,5 @@
+$gutter: 0em;
+
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
@@ -5,17 +7,49 @@
 $base-font-family: $helvetica;
 
 // Colors
-$blue: #477dca;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
 $very-light-gray: #fafafa;
 
 $base-font-color: $dark-gray;
-$base-background-color: $very-light-gray;
 
 body {
   font-family: $base-font-family;
-  background-color: $base-background-color;
   color: $base-font-color;
 }
+
+
+.holds-nav {
+  height: 60px;
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #7D7773;
+}
+
+.content-container {
+  @include outer-container(1080px);
+  background-color: $medium-gray;
+  height: auto;
+}
+
+
+.holds-sidebar {
+  @include span-columns(4);
+  background-color: $dark-gray;
+  height: 675px;
+}
+
+.holds-main-content {
+  @include span-columns(8);
+  height: auto;
+}
+
+  .holds-repo-filters {
+    height: 120px;
+    background-color: green;
+  }
+
+  .holds-repos {
+    background-color: #fff;
+    height: auto;
+  }
