@@ -37,13 +37,15 @@ body {
 
 .content-container {
   @include outer-container(1080px);
-  background-color: $medium-gray;
+  background-color: #fff;
+  border: 1px solid $medium-gray;
   height: auto;
 }
 
   .holds-sidebar {
     @include span-columns(4);
-    background-color: $dark-gray;
+    background-color: #fff;
+    border: 1px solid $medium-gray;
     height: 675px;
   }
 
@@ -54,10 +56,12 @@ body {
 
   .holds-repo-filters {
     height: 120px;
-    background-color: green;
+    background-color: #fff;
+    border: 1px solid $medium-gray;
   }
 
   .holds-repos {
     background-color: #fff;
+    border: 1px solid $medium-gray;
     height: auto;
   }
