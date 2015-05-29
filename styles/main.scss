@@ -2,6 +2,7 @@ $gutter: 0em;
 
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
+@import 'header.scss';
 
 // Typography
 $base-font-family: $helvetica;
@@ -26,23 +27,30 @@ body {
   border-bottom: 1px solid #7D7773;
 }
 
+  .nav-container {
+    @include outer-container(1080px);
+  }
+
+    .left-nav {
+      width: 675px;
+    }
+
 .content-container {
   @include outer-container(1080px);
   background-color: $medium-gray;
   height: auto;
 }
 
+  .holds-sidebar {
+    @include span-columns(4);
+    background-color: $dark-gray;
+    height: 675px;
+  }
 
-.holds-sidebar {
-  @include span-columns(4);
-  background-color: $dark-gray;
-  height: 675px;
-}
-
-.holds-main-content {
-  @include span-columns(8);
-  height: auto;
-}
+  .holds-main-content {
+    @include span-columns(8);
+    height: auto;
+  }
 
   .holds-repo-filters {
     height: 120px;
