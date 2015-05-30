@@ -1,7 +1,8 @@
 <div class="user">
   <img src="{{avatar_url}}" alt="{{name}}" class="avatar"/>
   <h2>{{name}}</h2>
-  <h3>{{login}}</h3>
+  <h4>{{login}}</h4>
+  <hr>
 
   <ul class="info">
     <li class="info-detail">
@@ -13,22 +14,26 @@
       <span>Join on {{created_at}}</span>
     </li>
   </ul>
+  <hr>
 
   <ul class="stats">
     <li class="stats-detail">
-      <a href="{{followers_url}}">{{followers}}</a>
+      <a href="{{followers_url}}"><strong>{{followers}}</strong></a>
       <span>Followers</span>
     </li>
     <li class="stats-detail">
-      <a href="{{starred_url}}">0</a>
+      <a href="{{starred_url}}"><strong>0</strong></a>
       <span>Starred</span>
     </li>
     <li class="stats-detail">
-      <a href="{{following_url}}">{{following}}</a>
+      <a href="{{following_url}}"><strong>{{following}}</strong></a>
       <span>Following</span>
     </li>
   </ul>
+  <hr>
 
-  <h3>Organizations</h3>
-    <img src="{{organizations_url}}" alt="organizations"/>
+  <div class="orgs">
+    <h3>Organizations</h3>
+    <img src="https://avatars.githubusercontent.com/u/11824325?v=3" alt="organizations"/>
+  </div>
 </div>

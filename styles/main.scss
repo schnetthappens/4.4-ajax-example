@@ -3,7 +3,7 @@ $gutter: 0em;
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 @import 'header.scss';
-@import 'user.scss';
+@import 'sidebar.scss';
 @import 'repo-filters';
 
 // Typography
@@ -40,7 +40,7 @@ body {
 .content-container {
   @include outer-container(1080px);
   background-color: #fff;
-  border: 1px solid $medium-gray;
+  /* border: 1px solid $medium-gray; */
   height: auto;
   margin-top: 25px;
 }
@@ -49,8 +49,13 @@ body {
     @include span-columns(4);
     height: 675px;
     background-color: #fff;
-    border: 1px solid $medium-gray;
+    /* border: 1px solid $medium-gray; */
   }
+
+    .holds-user {
+      max-width: 85%;
+      margin: 0 auto;
+    }
 
   .holds-main-content {
     @include span-columns(8);
@@ -65,6 +70,6 @@ body {
 
   .holds-repos {
     background-color: #fff;
-    border: 1px solid $medium-gray;
+    /* border: 1px solid $medium-gray; */
     height: auto;
   }

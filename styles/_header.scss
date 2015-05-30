@@ -1,9 +1,8 @@
 
 //VARIABLES
-
-
+$light-grey: #CCCCCC;
+$dark-grey: #333333;
 /*LAYOUT of elements in nav*/
-
 
 
 .left-nav {
@@ -22,16 +21,19 @@
     height: 32px;
     margin-right: 20px;
     margin-left: 10px;
-    border: 1px solid #CCCCCC;
+    border: 1px solid $light-grey;
     border-radius: 3px;
   }
 
     .left-nav a {
       text-decoration: none;
       font-size: 0.8em;
-      color: #333333;
+      color: $dark-grey;
       padding-right: 20px;
     }
+
+
+
 
 .right-nav {
   display: inline-block;
@@ -55,7 +57,7 @@
     .right-nav li .username {
       text-decoration: none;
       font-size: 0.8em;
-      color: #333333;
+      color: $dark-grey;
       padding-right: 20px;
     }
 
@@ -68,5 +70,5 @@
       }
 
     .right-nav a {
-      color: #333333;
+      color: $dark-grey;
     }
