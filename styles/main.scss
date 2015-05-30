@@ -4,6 +4,7 @@ $gutter: 0em;
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 @import 'header.scss';
 @import 'sidebar.scss';
+@import 'repos.scss';
 @import 'repo-filters';
 
 // Typography
@@ -72,4 +73,5 @@ body {
     background-color: #fff;
     /* border: 1px solid $medium-gray; */
     height: auto;
+    margin-top: 10px;
   }
