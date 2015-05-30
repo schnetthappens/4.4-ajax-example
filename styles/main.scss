@@ -3,6 +3,7 @@ $gutter: 0em;
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 @import 'header.scss';
+@import 'repo-filters';
 
 // Typography
 $base-font-family: $helvetica;
@@ -40,13 +41,14 @@ body {
   background-color: #fff;
   border: 1px solid $medium-gray;
   height: auto;
+  margin-top: 25px;
 }
 
   .holds-sidebar {
     @include span-columns(4);
+    height: 675px;
     background-color: #fff;
     border: 1px solid $medium-gray;
-    height: 675px;
   }
 
   .holds-main-content {

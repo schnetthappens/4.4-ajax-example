@@ -22,6 +22,7 @@
           <li class="left-nav-item"><a href="#">Explore</a></li>
           <li class="left-nav-item"><a href="#">Gist</a></li>
           <li class="left-nav-item"><a href="#">Blog</a></li>
+          <li class="left-nav-item"><a href="#">Help</a></li>
           <li class="left-nav-item"></li>
         </ul>
         <ul class="right-nav">
@@ -38,7 +39,44 @@
     <section class="content-container">
       <section class="holds-sidebar"></section>
       <section class="holds-main-content">
-        <section class="holds-repo-filters"></section>
+        <section class="holds-repo-filters">
+          <ul class=repo-tabs>
+            <li>
+              <span class="octicon octicon-diff-added"></span>
+              <a href="#">Contributions</a>
+            </li>
+            <li>
+              <span class="octicon octicon-repo"></span>
+              <a href="#">Repositories</a>
+            </li>
+            <li>
+              <span class="octicon octicon-rss"></span>
+              <a href="#">Public activity</a>
+            </li>
+            <button name="button">
+              <span class="octicon octicon-pencil"></span>
+              <span>Edit profile</span>
+            </button>
+          </ul>
+
+          <ul class="repo-filters">
+            <input type="text" name="search" value="" placeholder="Find a repository...">
+            <button name="button">Search</button>
+          </ul>
+
+          <ul class="filter-links">
+            <a href="#">All</a>
+            <a href="#">Public</a>
+            <a href="#">Private</a>
+            <a href="#">Sources</a>
+            <a href="#">Forks</a>
+            <a href="#">Mirrors</a>
+            <button name="button">
+              <span class="octicon octicon-repo"></span>
+              <span>New</span>
+            </button>
+          </ul>
+        </section>
         <section class="holds-repos"></section>
       </section>
     </section>
