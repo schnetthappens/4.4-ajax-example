@@ -13,6 +13,7 @@
   $.ajax({
     url: "https://api.github.com/users/schnetthappens/repos",
     }).then(function(data){
+      $('.holds-repos').prepend(JST['repo'](data));
     console.log(data);
   });
 });
