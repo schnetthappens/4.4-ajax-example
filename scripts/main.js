@@ -6,6 +6,7 @@
   $.ajax({
     url: "https://api.github.com/users/schnetthappens",
     }).then(function(data){
+      $('.holds-sidebar').prepend(JST['user'](data));
     console.log(data);
   });
 
