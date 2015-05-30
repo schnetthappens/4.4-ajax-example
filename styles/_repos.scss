@@ -1,12 +1,13 @@
 
 .repo {
   border-top: 1px solid #CCCCCC;
+  height: 150px;
 }
 
 
 .repo-name p,
 .repo-details a,
-.octicon {
+.repo-details .octicon {
   color: #A29C9C;
 }
 
