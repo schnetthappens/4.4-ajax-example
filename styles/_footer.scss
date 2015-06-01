@@ -7,6 +7,7 @@
 .legal-links,
 .other-links {
   list-style: none;
+  margin: 0;
 }
 
 .legal-links,
@@ -25,11 +26,17 @@
     display: inline-block;
   }
 
+
+  .legal-links,
+  .other-links,
+    a:hover {
+      /* text-decoration: underline; */
+    }
+
   .legal-links span {
     padding-right: 15px;
     color: #A29C9C;
   }
-
 
   .legal-links {
     float: left;

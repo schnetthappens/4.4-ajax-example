@@ -18,4 +18,9 @@
   });
 });
 
+  Handlebars.registerHelper('moment', function(date){
+        var result = moment(date).fromNow();
+        return new Handlebars.SafeString(result);
+      });
+
 })();
