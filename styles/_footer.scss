@@ -1,0 +1,53 @@
+
+.wraps-footer-links {
+  line-height: 100px;
+  text-align: center;
+}
+
+.legal-links,
+.other-links {
+  list-style: none;
+  margin: 0;
+}
+
+.legal-links,
+.other-links,
+  a {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #4183C4;
+    padding-right: 15px;
+  }
+
+
+.legal-links,
+.other-links,
+  li {
+    display: inline-block;
+  }
+
+
+  .legal-links,
+  .other-links,
+    a:hover {
+      /* text-decoration: underline; */
+    }
+
+  .legal-links span {
+    padding-right: 15px;
+    color: #A29C9C;
+  }
+
+  .legal-links {
+    float: left;
+  }
+
+  .other-links {
+    padding-right: 0;
+    float: right;
+  }
+
+  footer .mega-octicon {
+    color: #CCCCCC;
+    padding: 0 70px;
+  }

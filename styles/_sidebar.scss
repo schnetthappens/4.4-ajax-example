@@ -1,0 +1,88 @@
+.user {
+  margin: 0 auto;
+}
+
+  .user hr {
+    margin-top: 25px;
+    background-color: #CCCCCC;
+    border: none;
+    height: 1px;
+  }
+
+
+  .user img {
+    width: 255px;
+    height: 255px;
+    border-radius: 10px;
+  }
+
+  .user h2 {
+    font-size: 2em;
+    margin: 0;
+  }
+
+  .user h4 {
+    margin: 0;
+    color: #A29C9C;
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+
+
+.user
+  .info,
+  .stats {
+  list-style: none;
+}
+
+
+.info {
+  padding-left: 0;
+}
+
+  .info-detail .octicon {
+    color: #A29C9C;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+
+.stats-detail {
+  display: inline-block;
+  /* padding-right: 10px; */
+}
+
+  .followers,
+  .starred {
+    padding-right: 30px;
+  }
+
+  .stats {
+    padding-left: 0;
+  }
+
+  .stats-detail a {
+    text-decoration: none;
+    display: block;
+    font-size: 2em;
+    color: #4183C4;
+    text-align: center;
+  }
+
+  .stats-detail span {
+    font-size: 0.8em;
+    color: #A29C9C;
+    text-align: center;
+  }
+
+
+
+  .orgs {
+    margin-top: 25px;
+  }
+
+  .orgs img {
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+  }

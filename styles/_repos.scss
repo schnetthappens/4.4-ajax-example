@@ -1,0 +1,52 @@
+
+.repo {
+  border-top: 1px solid #CCCCCC;
+  height: 150px;
+}
+
+
+.repo-name p,
+.repo-details a,
+.repo-details .octicon {
+  color: #A29C9C;
+}
+
+.repo-name {
+  display: inline-block;
+  margin: 1em auto;
+}
+
+
+  .repo-name a {
+    text-decoration: none;
+    color: #4183C4;
+    font-size: 1.5em;
+  }
+
+  .repo-name p {
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+
+
+.repo-details {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin: 0;
+  float: right;
+}
+
+  .repo-details a {
+    text-decoration: none;
+  }
+
+  .repo-details li {
+    display: inline-block;
+    margin-top: 1em;
+    padding-right: 10px;
+  }
+
+    .repo-details li:hover {
+      color: #4183C4;
+    }

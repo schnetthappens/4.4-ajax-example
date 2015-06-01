@@ -1,0 +1,82 @@
+
+//VARIABLES
+$light-grey: #CCCCCC;
+$dark-grey: #333333;
+/*LAYOUT of elements in nav*/
+
+
+.left-nav {
+  list-style: none;
+  display: inline-block;
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+  .left-nav li {
+    display: inline-block;
+  }
+
+  .left-nav input {
+    width: 350px;
+    height: 32px;
+    margin-right: 20px;
+    margin-left: 10px;
+    border: 1px solid $light-grey;
+    border-radius: 3px;
+  }
+
+    input[type=text] {
+        font-size: 0.9em;
+        background-color: #fff;
+        padding-left: 0.5em;
+      }
+
+    .left-nav a {
+      text-decoration: none;
+      font-size: 0.8em;
+      color: $dark-grey;
+      padding-right: 20px;
+    }
+
+      .left-nav a:hover {
+        color: #4183C4;
+      }
+
+
+
+
+.right-nav {
+  display: inline-block;
+  width: 300px;
+  margin-top: 16px;
+  padding-left: 0;
+  float: right;
+}
+
+  .right-nav li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+    .right-nav img {
+      width: 25px;
+      height: 25px;
+      border-radius: 3px;
+      vertical-align: middle;
+    }
+
+    .right-nav li .username {
+      text-decoration: none;
+      font-size: 0.8em;
+      color: $dark-grey;
+      padding-right: 20px;
+    }
+
+
+    .right-nav a {
+      color: $dark-grey;
+    }
+
+      .right-nav a:hover {
+        color: #4183C4;
+      }

@@ -1,0 +1,23 @@
+{{#each this}}
+  <div class="repo">
+    <div class="holds-repo-info">
+      <div class="repo-name">
+        <a href="{{html_url}}"><strong>{{name}}</strong></a>
+        <p>Updated {{moment updated_at}}</p>
+      </div>
+      <ul class="repo-details">
+        <li>
+          <a href="{{languages_url}}"><strong>{{language}}</strong></a>
+        </li>
+        <li>
+          <span class="octicon octicon-star"></span>
+          <a href="{{stargazers_url}}"><strong>{{stargazers_count}}</strong></a>
+        </li>
+        <li>
+          <span class="octicon octicon-git-branch"></span>
+          <a href="{{forks_url}}"><strong>{{forks_count}}</strong></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+{{/each}}

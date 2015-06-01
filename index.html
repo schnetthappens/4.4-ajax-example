@@ -8,21 +8,117 @@
     <title></title>
 
     <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
-
+    <link rel="stylesheet" href="/octicons/octicons.css">
     <link rel="stylesheet" href="dist/styles/main.css">
 
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
+    <header class="holds-nav">
+      <nav class='nav-container'>
+        <ul class="left-nav">
+          <li class="nav-item logo"><span class="mega-octicon octicon-mark-github"></span></li>
+          <li><input type="text" name="search" value="" placeholder="Search GitHub"></li>
+          <li class="left-nav-item"><a href="#"><strong>Explore</strong></a></li>
+          <li class="left-nav-item"><a href="#"><strong>Gist</strong></a></li>
+          <li class="left-nav-item"><a href="#"><strong>Blog</strong></a></li>
+          <li class="left-nav-item"><a href="#"><strong>Help</strong></a></li>
+          <li class="left-nav-item"></li>
+        </ul>
+        <ul class="right-nav">
+          <img src="https://avatars.githubusercontent.com/u/8539629?v=3" alt="schnetthappens"/>
+          <li><a class="username" href="#"><strong>schnetthappens</strong></a></li>
+          <li><a href="#"><span class="octicon octicon-plus"></span></a></li>
+          <li><a href="#"><span class="octicon octicon-inbox"></span></a></li>
+          <li><a href="#"><span class="octicon octicon-gear"></span></a></li>
+          <li><a href="#"><span class="octicon octicon-sign-out"></span></a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="content-container">
+      <section class="holds-sidebar">
+        <div class="holds-user">
+
+        </div>
+      </section>
+      <section class="holds-main-content">
+        <section class="holds-repo-filters">
+          <ul class=repo-tabs>
+            <li>
+              <span class="octicon octicon-diff-added"></span>
+              <a href="#">Contributions</a>
+            </li>
+            <li>
+              <span class="octicon octicon-repo"></span>
+              <a href="#">Repositories</a>
+            </li>
+            <li>
+              <span class="octicon octicon-rss"></span>
+              <a href="#">Public activity</a>
+            </li>
+            <button class="edit-profile-btn" name="button">
+              <span class="octicon octicon-pencil"></span>
+              <span><strong>Edit profile</strong></span>
+            </button>
+          </ul>
+
+          <ul class="repo-filters">
+            <input type="text" name="search" value="" placeholder="Find a repository...">
+            <button class= "search-button" name="button"><strong>Search</strong></button>
+          </ul>
+
+          <ul class="filter-links">
+            <a href="#">All</a>
+            <a href="#">Public</a>
+            <a href="#">Private</a>
+            <a href="#">Sources</a>
+            <a href="#">Forks</a>
+            <a href="#">Mirrors</a>
+            <button class ="new-button" name="button">
+              <span class="octicon octicon-repo"></span>
+              <span>New</span>
+            </button>
+          </ul>
+        </section>
+        <section class="holds-repos"></section>
+      </section>
+    </section>
+
+    <footer class="holds-footer-links">
+      <div class="wraps-footer-links">
+        <ul class="legal-links">
+          <li><span>&copy 2015 Github, Inc.</span></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <span class="mega-octicon octicon-mark-github"></span>
+        <ul class="other-links">
+          <li><a href="#">Status</a></li>
+          <li><a href="#">API</a></li>
+          <li><a href="#">Training</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+    </div>
+  </footer>
+
+
+
 
   <!-- Third Party Scripts -->
+  <script src="bower_components/moment/moment.js"></script>
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/underscore/underscore.js"></script>
   <script src="bower_components/handlebars/handlebars.js"></script>
 
+
+
   <!-- Application Scripts -->
   <script src="dist/scripts/templates.js"></script>
+  <script src="scripts/token.js"></script>
   <script src="scripts/main.js"></script>
-
 </body>
 </html>

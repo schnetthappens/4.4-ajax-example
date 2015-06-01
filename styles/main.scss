@@ -1,21 +1,84 @@
+$gutter: 0em;
+
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
+@import 'header.scss';
+@import 'sidebar.scss';
+@import 'repos.scss';
+@import 'repo-filters';
+@import 'footer.scss';
 
 // Typography
 $base-font-family: $helvetica;
 
 // Colors
-$blue: #477dca;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
 $very-light-gray: #fafafa;
 
 $base-font-color: $dark-gray;
-$base-background-color: $very-light-gray;
 
 body {
   font-family: $base-font-family;
-  background-color: $base-background-color;
   color: $base-font-color;
 }
+
+
+.holds-nav {
+  height: 60px;
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #7D7773;
+}
+
+  .nav-container {
+    @include outer-container(1080px);
+  }
+
+    .left-nav {
+      width: 675px;
+    }
+
+.content-container {
+  @include outer-container(1080px);
+  background-color: #fff;
+  /* border: 1px solid $medium-gray; */
+  height: auto;
+  margin-top: 25px;
+}
+
+  .holds-sidebar {
+    @include span-columns(3);
+    height: 675px;
+    background-color: #fff;
+    /* border: 1px solid $medium-gray; */
+  }
+
+    .holds-user {
+      max-width: 85%;
+      margin: 0;
+    }
+
+  .holds-main-content {
+    @include span-columns(9);
+    height: auto;
+    /* margin-left: 10px; */
+  }
+
+  .holds-repo-filters {
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .holds-repos {
+    background-color: #fff;
+    height: auto;
+    margin-top: 10px;
+  }
+
+
+  .holds-footer-links {
+    @include outer-container(1080px);
+    height: 100px;
+    border-top: 1px solid #CCCCCC;
+  }
