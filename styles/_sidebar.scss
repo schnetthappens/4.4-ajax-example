@@ -2,31 +2,31 @@
   margin: 0 auto;
 }
 
-.user hr {
-  margin-top: 25px;
-  background-color: #CCCCCC;
-  border: none;
-  height: 1px;
-}
+  .user hr {
+    margin-top: 25px;
+    background-color: #CCCCCC;
+    border: none;
+    height: 1px;
+  }
 
 
-.user img {
-  width: 255px;
-  height: 255px;
-  border-radius: 10px;
-}
+  .user img {
+    width: 255px;
+    height: 255px;
+    border-radius: 10px;
+  }
 
-.user h2 {
-  font-size: 2em;
-  margin: 0;
-}
+  .user h2 {
+    font-size: 2em;
+    margin: 0;
+  }
 
-.user h4 {
-  margin: 0;
-  color: #A29C9C;
-  font-size: 1.5em;
-  font-weight: 300;
-}
+  .user h4 {
+    margin: 0;
+    color: #A29C9C;
+    font-size: 1.5em;
+    font-weight: 300;
+  }
 
 
 .user
@@ -40,17 +40,26 @@
   padding-left: 0;
 }
 
-.info-detail .octicon {
-  color: #A29C9C;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
+  .info-detail .octicon {
+    color: #A29C9C;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
 
 
 .stats-detail {
   display: inline-block;
-  padding-right: 30px;
+  /* padding-right: 10px; */
 }
+
+  .followers,
+  .starred {
+    padding-right: 30px;
+  }
+
+  .stats {
+    padding-left: 0;
+  }
 
   .stats-detail a {
     text-decoration: none;
@@ -63,6 +72,7 @@
   .stats-detail span {
     font-size: 0.8em;
     color: #A29C9C;
+    text-align: center;
   }
 
 

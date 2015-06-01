@@ -25,6 +25,12 @@ $dark-grey: #333333;
     border-radius: 3px;
   }
 
+    input[type=text] {
+        font-size: 0.9em;
+        background-color: #fff;
+        padding-left: 0.5em;
+      }
+
     .left-nav a {
       text-decoration: none;
       font-size: 0.8em;

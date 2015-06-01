@@ -48,7 +48,7 @@ body {
 }
 
   .holds-sidebar {
-    @include span-columns(4);
+    @include span-columns(3);
     height: 675px;
     background-color: #fff;
     /* border: 1px solid $medium-gray; */
@@ -56,23 +56,22 @@ body {
 
     .holds-user {
       max-width: 85%;
-      margin: 0 auto;
+      margin: 0;
     }
 
   .holds-main-content {
-    @include span-columns(8);
+    @include span-columns(9);
     height: auto;
+    /* margin-left: 10px; */
   }
 
   .holds-repo-filters {
-    height: 120px;
     background-color: #fff;
-    border: 1px solid $medium-gray;
+    margin-bottom: 20px;
   }
 
   .holds-repos {
     background-color: #fff;
-    /* border: 1px solid $medium-gray; */
     height: auto;
     margin-top: 10px;
   }
